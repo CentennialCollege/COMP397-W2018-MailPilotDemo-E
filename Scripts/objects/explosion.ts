@@ -14,6 +14,7 @@ module objects {
     private _animationEnded() {
       this.alpha = 0;
       this.off("animationend", this._animationEnded.bind(this), false);
+      managers.Game.currentSceneObject.removeChild(this);
     }
 
 

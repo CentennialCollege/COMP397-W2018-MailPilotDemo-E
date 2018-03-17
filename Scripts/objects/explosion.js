@@ -24,6 +24,7 @@ var objects;
         Explosion.prototype._animationEnded = function () {
             this.alpha = 0;
             this.off("animationend", this._animationEnded.bind(this), false);
+            managers.Game.currentSceneObject.removeChild(this);
         };
         // public methods
         Explosion.prototype.Start = function () {
