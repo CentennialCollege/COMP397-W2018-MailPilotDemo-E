@@ -30,6 +30,7 @@ module scenes {
 
       this._welcomeLabel = new objects.Label("Mail Pilot", "60px", "Dock51", "#FFFF00", 320, 240, true);
       this._startButton = new objects.Button("startButton", 320, 340);
+
       this.Main();
     }
 
@@ -49,6 +50,6 @@ module scenes {
        this.addChild(this._startButton);
 
        this._startButton.on("click", this._startButtonClick);
-    }
+      }
   }
 }

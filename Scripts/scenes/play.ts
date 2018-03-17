@@ -2,6 +2,7 @@ module scenes {
   export class PlayScene extends objects.Scene {
     // Private Instance Variables
     private _ocean: objects.Ocean;
+    private _coin: objects.Coin;
     private _plane: objects.Plane;
     private _island: objects.Island;
     private _clouds: objects.Cloud[];
@@ -28,6 +29,8 @@ module scenes {
     // Initialize Game Variables and objects
     public Start(): void {
       this._ocean = new objects.Ocean();
+      this._coin = new objects.Coin();
+
       this._plane = new objects.Plane();
       this._island = new objects.Island();
 
@@ -54,6 +57,11 @@ module scenes {
     public Update(): void {
       this._ocean.Update();
       this._plane.Update();
+
+      this._coin.x = this._island.x;
+      this._coin.y = this._island.y;
+      this._coin.Update();
+
       this._island.Update();
 
       // check collision between plane and island
@@ -80,6 +88,9 @@ module scenes {
 
       // add the island to the scene
       this.addChild(this._island);
+
+      // add the coin to the Scene
+      this.addChild(this._coin);
 
       // add the plane to the scene
       this.addChild(this._plane);
