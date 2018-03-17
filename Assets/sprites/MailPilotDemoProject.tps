@@ -4,9 +4,9 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>4.6.2</string>
+        <string>4.6.3</string>
         <key>fileName</key>
-        <string>/Users/thomas/Desktop/COMP397/COMP397-W2018-MailPilotDemo-D/Assets/sprites/MailPilotDemoProject.tps</string>
+        <string>/Users/thomas/Desktop/COMP397/COMP397-W2018-MailPilotDemo-E/Assets/sprites/MailPilotDemoProject.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -129,22 +129,6 @@
                 <uint>1</uint>
             </struct>
         </struct>
-        <key>andEngine</key>
-        <struct type="AndEngine">
-            <key>minFilter</key>
-            <enum type="AndEngine::MinFilter">Linear</enum>
-            <key>packageName</key>
-            <string>Texture</string>
-            <key>wrap</key>
-            <struct type="AndEngineWrap">
-                <key>s</key>
-                <enum type="AndEngineWrap::Wrap">Clamp</enum>
-                <key>t</key>
-                <enum type="AndEngineWrap::Wrap">Clamp</enum>
-            </struct>
-            <key>magFilter</key>
-            <enum type="AndEngine::MagFilter">MagLinear</enum>
-        </struct>
         <key>dataFileNames</key>
         <map type="GFileNameMap">
             <key>json</key>
@@ -212,6 +196,28 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">../images/coin01.png</key>
+            <key type="filename">../images/coin02.png</key>
+            <key type="filename">../images/coin03.png</key>
+            <key type="filename">../images/coin04.png</key>
+            <key type="filename">../images/coin05.png</key>
+            <key type="filename">../images/coin06.png</key>
+            <key type="filename">../images/coin07.png</key>
+            <key type="filename">../images/coin08.png</key>
+            <key type="filename">../images/coin09.png</key>
+            <key type="filename">../images/coin10.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>11,10,22,20</rect>
+                <key>scale9Paddings</key>
+                <rect>11,10,22,20</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">../images/island.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -264,6 +270,16 @@
             <filename>../images/plane1.png</filename>
             <filename>../images/plane2.png</filename>
             <filename>../images/plane3.png</filename>
+            <filename>../images/coin01.png</filename>
+            <filename>../images/coin02.png</filename>
+            <filename>../images/coin03.png</filename>
+            <filename>../images/coin04.png</filename>
+            <filename>../images/coin05.png</filename>
+            <filename>../images/coin06.png</filename>
+            <filename>../images/coin07.png</filename>
+            <filename>../images/coin08.png</filename>
+            <filename>../images/coin09.png</filename>
+            <filename>../images/coin10.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
