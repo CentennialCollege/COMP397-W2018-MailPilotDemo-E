@@ -10,13 +10,23 @@ module managers {
         if(!object2.isColliding) {
           object2.isColliding = true;
           switch(object2.name) {
-            case "island":
-              createjs.Sound.play("yay");
+            case "coin":
+            if(object2.alpha != 0) {
+              createjs.Sound.play("coin");
               managers.Game.scoreBoard.Score += 100;
+              object2.alpha = 0;
+
+              // life power up
+              if(managers.Game.scoreBoard.Score % 1000 == 0) {
+                createjs.Sound.play("lives");
+                managers.Game.scoreBoard.Lives += 1;
+              }
+
               if(managers.Game.HighScore <= managers.Game.scoreBoard.Score) {
                 managers.Game.scoreBoard.HighScore = managers.Game.scoreBoard.Score;
                 managers.Game.HighScore = managers.Game.scoreBoard.HighScore;
               }
+            }
             break;
             case "cloud":
               createjs.Sound.play("thunder");
